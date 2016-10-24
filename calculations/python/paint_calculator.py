@@ -22,7 +22,7 @@ def main():
     else:
         square_feet= length * width
         cover_feet = 350
-        gallons = math.ceil(square_feet / cover_feet)
+        gallons = math.ceil(square_feet / (cover_feet * 1.0))
         print_string = 'You will need to purchase %d gallons of paint to '\
                         'cover %d square feet.' % (gallons, square_feet)
         print(print_string)
