@@ -32,8 +32,11 @@ def main():
     while True:
         try:
             count += 1
-            price = int(input_process('Price of item %d: ' % count))
-            quantity = int(input_process('Quantity of item %d: ' % count))
+            price_str = input_process('Price of item %d: ' % count)
+            quantity_str = input_process('Quantity of item %d: ' % count)
+            if (price_str == '\r\n') or (quantity_str is '\r\n'): break
+            price = int(price_str)
+            quantity = int(quantity_str)
             item_list.append((price, quantity))
         except:
             print('only number! bye~')

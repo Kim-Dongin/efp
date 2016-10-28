@@ -33,7 +33,7 @@ def main():
     else:
         amount = principal*(1 + interest_rate*years/100)
         print_str = 'After {0} years at {1}%, the investment will be worth ${2}.'\
-        .format(years, interest_rate, amount)
+                    .format(years, interest_rate, amount)
         print(print_str)
 
 if __name__ == '__main__':
