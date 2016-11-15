@@ -10,13 +10,16 @@
 
 import sys
 
+
 def input_process(in_name):
-    return input(in_name) if (3,0) <= sys.version_info else raw_input(in_name)
+    return input(in_name) if (3, 0) <= sys.version_info else raw_input(in_name)
+
 
 def main():
     name = str(input_process('What is your name? '))
     hello = 'Hello, %s, nice to meet you!' % name
     print(hello)
+
 
 if __name__ == '__main__':
     main()

@@ -1,4 +1,3 @@
-# Exercise 10. Self-Checkout
 # Output:
 #   Price of item 1: 25
 #   Quantity of item 1: 2
@@ -50,7 +49,7 @@ def main():
     total = subtotal + tax
 
     print_str = '''Subtotal: $%0.2f\nTax: $%0.2f\nTotal: $%0.2f''' \
-                % (subtotal, tax, total)
+                 % (subtotal, tax, total)
     print(print_str)
 
 if __name__ == '__main__':

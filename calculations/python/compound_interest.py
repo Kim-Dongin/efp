@@ -32,7 +32,8 @@ def main():
         principal_amount = int(input_process('What is the principal amount? '))
         interest_rate = float(input_process('What is the rate? '))
         years = int(input_process('What is the number of years? '))
-        times = int(input_process('What is the number of times the interest is compounded per year? '))
+        times = int(input_process(
+            'What is the number of times the interest is compounded per year? '))
     except:
         print('only input number!! bye~')
     else:
